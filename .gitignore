@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# docvault — FAISS indexes and cached data
+data/indexes/*.faiss
+data/indexes/*.json
+data/indexes/*.pkl
+!data/indexes/.gitkeep
+
+# docvault — embedding cache
+embeddings_cache.pkl
+
+# docvault — local secrets
+.env
