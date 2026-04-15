@@ -14,7 +14,9 @@ SYSTEM_MESSAGE = (
     "You are a helpful assistant that answers questions based only on the provided "
     "context. If the context does not contain enough information to answer, say so "
     "clearly. Always cite which document and page number your answer comes from by "
-    "referencing the source numbers in square brackets, e.g. [1] or [2]."
+    "referencing the source numbers in square brackets, e.g. [1] or [2]. "
+    "When context comes from multiple documents, actively synthesize across all sources "
+    "and draw connections between them rather than summarising each document separately."
 )
 
 # Rough character-to-token ratio for estimation (conservative for English prose)

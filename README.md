@@ -89,15 +89,15 @@ ANTHROPIC_API_KEY=sk-ant-...
 
 ### 3. Get sample documents
 
-Place any PDF files in `data/sample_docs/`. A few good public-domain sources:
+Three documents are included in `data/sample_docs/` for immediate use:
 
-| Document | Source |
-|---|---|
-| A short arXiv paper (CC BY 4.0) | `https://arxiv.org/pdf/<id>.pdf` |
-| A U.S. government report | `https://www.gao.gov` (open access) |
-| Classic literature | `https://www.gutenberg.org` (plain-text PDFs) |
+| File | Title | Source | License |
+|---|---|---|---|
+| `CC_Frankenstein_Reader_W1.pdf` | *Frankenstein* — Mary Shelley | Core Classics edition | CC BY 4.0 |
+| `817539.pdf` | *Digital Twins: Virtual Models of People and Objects* | U.S. Government Accountability Office | Public domain (U.S. government work) |
+| `2604.13017v1.pdf` | *PAL: Personal Adaptive Learner* — Chakraborty et al. | arXiv:2604.13017 | CC BY 4.0 |
 
-Download with `curl` or your browser, then drop the `.pdf` files into `data/sample_docs/`.
+To use your own documents instead, drop any `.pdf` files into `data/sample_docs/` and re-run the ingest step.
 
 ### 4. Ingest documents
 
@@ -228,7 +228,7 @@ All values are read from `.env` (via `python-dotenv`) with the shown defaults. O
 | `CHUNK_SIZE` | `512` | Target character count per chunk across all strategies. |
 | `CHUNK_OVERLAP` | `64` | Approximate character overlap between adjacent chunks. |
 | `TOP_K` | `5` | Number of chunks retrieved per query. |
-| `LLM_MODEL` | `claude-sonnet-4-20250514` | Claude model ID used for answer generation. |
+| `LLM_MODEL` | `claude-sonnet-4-6` | Claude model ID used for answer generation. |
 | `INDEX_DIR` | `data/indexes` | Directory where the FAISS index and metadata files are saved. |
 | `DATA_DIR` | `data` | Root data directory (used by CLI scripts as a default base). |
 | `RERANK` | `false` | Set to `true` to enable cross-encoder reranking after retrieval. |

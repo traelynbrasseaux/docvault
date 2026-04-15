@@ -50,7 +50,7 @@ class Encoder:
         self._model = SentenceTransformer(config.embedding_model, device=device)
         self._batch_size = config.embedding_batch_size
         self.model_name: str = config.embedding_model
-        self.embedding_dim: int = self._model.get_sentence_embedding_dimension()
+        self.embedding_dim: int = self._model.get_embedding_dimension()
         self._device = device
 
         logger.info(

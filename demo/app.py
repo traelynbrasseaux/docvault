@@ -72,7 +72,7 @@ def _citation_cards_html(cited_sources: list) -> str:
     <summary style="padding:12px 16px;cursor:pointer;background:#f8fafc;
                     font-weight:600;list-style:none;display:flex;
                     justify-content:space-between;align-items:center;">
-      <span>[{src.citation_number}] &nbsp;{src.doc_name} &mdash; page {src.page_number}</span>
+      <span style="color:#1e293b;">[{src.citation_number}] &nbsp;{src.doc_name} &mdash; page {src.page_number}</span>
       <span style="color:#64748b;font-size:0.82em;font-weight:400;">
         relevance&nbsp;{src.score:.3f}
       </span>

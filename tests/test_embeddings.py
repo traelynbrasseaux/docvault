@@ -47,7 +47,7 @@ class FakeSentenceTransformer:
     def __init__(self, model_name_or_path: str, device: str = "cpu") -> None:
         self._dim = DIM
 
-    def get_sentence_embedding_dimension(self) -> int:
+    def get_embedding_dimension(self) -> int:
         return self._dim
 
     def encode(
