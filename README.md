@@ -40,6 +40,34 @@ flowchart TD
 
 ---
 
+## Demo
+
+### Upload your documents
+
+![Ingest tab — upload PDFs to build the index](assets/docvault_ingest.png)
+
+Drop any PDFs into the **Ingest** tab and click **Ingest Documents** to chunk, embed, and index them in one step.
+
+### Ask a question
+
+![Query tab — question input, top-k slider, and generated answer](assets/docvault_1.png)
+
+Type a question, adjust the **Top-K** slider to control how many chunks are retrieved, and get a cited answer from Claude.
+
+### Synthesis and source cards
+
+![Scrolled down — synthesis section and source citation cards](assets/docvault_2.png)
+
+Scroll down to see the full synthesis alongside the source cards that back up each claim.
+
+### Citation detail
+
+![Citation cards with relevance scores and chunk previews](assets/docvault_3.png)
+
+Expand any citation card to see the document name, page number, relevance score, and the exact chunk text that was used.
+
+---
+
 ## Features
 
 - **Zero framework dependencies** — no LangChain, no LlamaIndex; every component is built on base libraries
